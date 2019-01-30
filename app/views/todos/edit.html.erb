@@ -1,0 +1,5 @@
+<%= form_with model: @todo, local:true do |f| %>
+<h1>Edita tu Tarea<h1>
+<h3><%= f.text_field :description %></h3>
+<p><%= f.button :Update %></p>
+<% end %>

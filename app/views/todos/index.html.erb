@@ -1,0 +1,18 @@
+<h1>Bienvenido a tu lista de Tareas</h1>
+<p> <%= link_to 'Crear Tarea', todos_new_path, class: 'btn btn-primary'%> </p>
+
+<div class="row">
+<% @todos.each do |todo| %>
+  <div class="col-sm-4 col-md-4">
+    <div class="thumbnail">
+      <div class="caption">
+        <h1> <%= todo.description %> <h1>
+        <p> <%= todo.complleted %> </p>
+        <p> <%= link_to 'Editar', editar_path(todo.id), class: 'btn btn-warning'%> </p>
+        <p> <%= link_to 'Borrar', todo, method: :delete, class: 'btn btn-danger' %> </p>
+        <p> <%= link_to 'Completar', complete_path(todo), class: 'btn btn-success' %> </p>
+      </div>
+    </div>
+  </div>
+<% end %>
+</div>

@@ -1,0 +1,5 @@
+<%= form_with model: @todo, local:true do |f| %>
+<h1>Ingresar Tarea a Realizar<h1>
+<h2><%= f.text_field :description %></h2>
+<p><%= f.button :Ingresar, class: 'btn btn-success' %></p>
+<% end %>
