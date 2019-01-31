@@ -2,4 +2,7 @@
 <h1>Ingresar Tarea a Realizar<h1>
 <h2><%= f.text_field :description %></h2>
 <p><%= f.button :Ingresar, class: 'btn btn-success' %></p>
+<div class="field">
+    <%= f.check_box :complleted, :style =>'visibility: hidden' %>
+</div>
 <% end %>

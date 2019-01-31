@@ -17,12 +17,7 @@
   </head>
 
   <body>
-    <ul class="nav nav-pills navbar-fixed-top">
-      <li role="presentation" class="active"><a href="#">Index</a></li>
-      <li role="presentation"><a href="#">List</a></li>
-      <li role="presentation"><a href="#">New ToDo</a></li>
-    </ul>
-
+    <%= render 'navbar', todo: @todo %>
     <%= yield %>
   </body>
 </html>
